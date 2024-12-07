@@ -26,12 +26,12 @@ function App() {
       setIsAuthenticated(true);
     }
 
-    fetch("http://localhost:5045/api/products")
+    fetch("https://bacekdprueba-hng9b0cqcyd7f8hc.westus2-01.azurewebsites.net/api/products")
       .then((response) => response.json())
       .then((data) => setProductos(data))
       .catch((error) => setError(error.message));
 
-    fetch("http://localhost:5045/api/products/categories")
+      fetch("https://bacekdprueba-hng9b0cqcyd7f8hc.westus2-01.azurewebsites.net/api/products/categories")
       .then((response) => response.json())
       .then((data) => setCategorias(data))
       .catch((error) => setError(error.message));
